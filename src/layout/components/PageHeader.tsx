@@ -13,7 +13,7 @@ const PageHeader = () => {
     : '';
 
   const route_desc = asPath?.includes('faq')
-    ? 'Get knowledgeable about Akilaah with answers to common question asked by our users'
+    ? 'Get knowledgeable about Ace with answers to common question asked by our users'
     : '';
 
   return (

@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Wrapper from './Wrapper';
 import { Button } from '../../components/elements';
-import { externalRoutes, internalRoutes, navRoutes } from '@/utils/appRoutes';
+import { internalRoutes, navRoutes } from '@/utils/appRoutes';
 import { LogoWhite } from '../../../public/assets/icons';
 import { MdArrowOutward } from 'react-icons/md';
 
@@ -36,24 +36,13 @@ const DesktopNav = () => {
     window.addEventListener('scroll', changeBackground);
   }, []);
 
-  const signin_options = [
-    { label: 'member', value: externalRoutes.MEMBER_LOGIN },
-    { label: 'organisation', value: externalRoutes.ORG_LOGIN },
-    { label: 'agent', value: externalRoutes.AGENT_LOGIN },
-  ];
-
   return (
     <nav className={`hidden xl:block`}>
       <Wrapper>
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-8">
             <Link href={internalRoutes.HOME} className="mr-4">
-              <Image
-                src={LogoWhite}
-                alt="akilaah logo"
-                width="50"
-                height="50"
-              />
+              <Image src={LogoWhite} alt="ace logo" width="50" height="50" />
             </Link>
           </div>
           <div className="flex gap-10 items-center">

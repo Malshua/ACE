@@ -10,7 +10,7 @@ interface PageSEOProps {
 }
 
 const PageSEO = ({ title, description, keywords, children }: PageSEOProps) => {
-  const siteUrl = 'https://akilaah.com/';
+  const siteUrl = 'https://Ace.com/';
   const { asPath } = useRouter();
   const cleanPath = asPath.split('#')[0].split('?')[0];
   const seoUrl = `${siteUrl}` + (asPath === '/' ? '' : cleanPath);
@@ -25,7 +25,7 @@ const PageSEO = ({ title, description, keywords, children }: PageSEOProps) => {
       <meta name="keywords" content={keywords} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content="/assets/images/akilaah-logo.png" />
+      <meta property="og:image" content="/assets/images/logoWhite.svg" />
 
       <script
         type="application/ld+json"

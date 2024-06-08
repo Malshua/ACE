@@ -2,7 +2,7 @@ import React from 'react';
 import { useRouter } from 'next/router';
 
 const CanonicalURL = () => {
-  const siteUrl = 'https://akilaah.com';
+  const siteUrl = 'https://ace.com';
   const { asPath } = useRouter();
   const cleanPath = asPath.split('#')[0].split('?')[0];
   const canonicalUrl = `${siteUrl}` + (asPath === '/' ? '' : cleanPath);

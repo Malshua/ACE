@@ -8,34 +8,6 @@ const internalRoutes = {
   FEATURES: '/#features',
 };
 
-const externalRoutes =
-  DEPLOYMENT_LEVEL === 'development'
-    ? {
-        THIRD_PARTY_SIGN_UP:
-          'https://akilaah-organization.vercel.app/docs/register',
-        THIRD_PARTY_DOCS: 'https://akilaah-organization.vercel.app/docs',
-        ORG_SIGN_UP: 'https://akilaah-organization.vercel.app/sign-up',
-        MEMBER_SIGN_UP: 'https://akilaah-member.vercel.app/sign-up',
-        ORG_LOGIN: 'https://akilaah-organization.vercel.app/login',
-        MEMBER_LOGIN: 'https://akilaah-member.vercel.app/login',
-        AGENT_LOGIN: 'https://akilaah-agent.vercel.app/login',
-        AGENT_SIGN_UP: 'https://akilaah-agent.vercel.app/sign-up',
-        SPONSOR_SIGN_UP: 'https://akilaah-sponsor.vercel.app/sign-up',
-        BENEFICIARY_SIGN_UP: 'https://akilaah-beneficiary.vercel.app/sign-up ',
-      }
-    : {
-        THIRD_PARTY_SIGN_UP: 'https://organization.akilaah.com/docs/register',
-        THIRD_PARTY_DOCS: 'https://organization.akilaah.com/docs',
-        ORG_SIGN_UP: 'https://organization.akilaah.com/sign-up',
-        MEMBER_SIGN_UP: 'https://member.akilaah.com/sign-up',
-        ORG_LOGIN: 'https://organization.akilaah.com/login',
-        MEMBER_LOGIN: 'https://member.akilaah.com/login',
-        AGENT_LOGIN: 'https://agent.akilaah.com/login',
-        AGENT_SIGN_UP: 'https://agent.akilaah.com/sign-up',
-        SPONSOR_SIGN_UP: 'https://akilaah-sponsor.vercel.app/sign-up',
-        BENEFICIARY_SIGN_UP: 'https://akilaah-beneficiary.vercel.app/sign-up',
-      };
-
 const navRoutes = [
   { label: 'About ACE', link: internalRoutes.FEATURES },
   { label: 'Our Misson', link: internalRoutes.ABOUT },
@@ -54,4 +26,4 @@ export const documentationRoutes = [
   { label: 'Accounting', link: '/documentation/accounting' },
 ];
 
-export { internalRoutes, externalRoutes, navRoutes, footerRoutes };
+export { internalRoutes, navRoutes, footerRoutes };

@@ -38,7 +38,7 @@ const MessageAlert = ({ open, setOpen, children }: any) => {
             </div>
 
             <div className="text-sm text-primary-default font-semibold">
-              - The Akilaah Team
+              - The Ace Team
             </div>
           </div>
         </div>
