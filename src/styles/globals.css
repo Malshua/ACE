@@ -16,6 +16,9 @@
   }
 }
 
+body, html {
+  overflow-x: hidden;
+}
 
 @layer utilities {
   .text-balance {

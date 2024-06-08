@@ -56,10 +56,6 @@ const Values = () => {
       <Wrapper className="flex flex-col gap-16 text-white py-8">
         <div className="flex items-center justify-between">
           <h1 className="text-4xl text-white">Our Core Values</h1>
-          <button className="flex text-primary-default bg-white item-center gap-3 px-6 py-2 rounded-md hover:-translate-y-0.5 all__trans">
-            <span className="font-medium">Contact us</span>
-            <MdArrowOutward className="text-xl text-secondary-default" />
-          </button>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-16">
           {Corevalues.map((item, index) => (
@@ -70,6 +66,11 @@ const Values = () => {
             </div>
           ))}
         </div>
+
+        <button className="flex text-primary-default bg-white w-fit item-center gap-2 px-4 py-2 rounded-md hover:-translate-y-0.5 all__trans">
+          <span className="font-medium">Contact us</span>
+          <MdArrowOutward className="text-xl text-secondary-default" />
+        </button>
       </Wrapper>
     </section>
   );

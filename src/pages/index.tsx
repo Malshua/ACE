@@ -2,10 +2,17 @@ import { Montserrat } from 'next/font/google';
 import { PageSEO } from '../layout/components';
 import {
   About,
+  Approach,
+  Consulting,
+  DealAdvisory,
+  Digital,
   HeroSection,
   Mission_Vision,
+  OurServices,
+  SpeaktoAdvisers,
   Values,
 } from '@/components/sections';
+import Restructuring from '@/components/sections/home/Restructuring';
 
 const montserrat = Montserrat({ subsets: ['latin'] });
 
@@ -29,6 +36,13 @@ const Home = () => {
         <About />
         <Mission_Vision />
         <Values />
+        <Approach />
+        <OurServices />
+        <DealAdvisory />
+        <Restructuring />
+        <Digital />
+        <Consulting />
+        <SpeaktoAdvisers />
       </div>
     </>
   );

@@ -7,7 +7,7 @@ import { heroimg } from '../../../../public/assets/images';
 const HeroSection = () => {
   return (
     <section
-      className="bg-primary-default xl:h-screen-minus-nav py-16 md:py-32 text-white"
+      className="bg-primary-default xl:h-screen-minus-nav py-32 text-white"
       id="hero"
     >
       <Wrapper className="lg:grid grid-cols-1 lg:grid-cols-12">

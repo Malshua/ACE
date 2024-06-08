@@ -11,7 +11,7 @@ const DefaultLayout = ({ children }: DefaultLayoutProps) => {
   return (
     <>
       <DesktopNav />
-      <MobileNav />
+      {/* <MobileNav /> */}
       <main>{children}</main>
       <Footer />
     </>

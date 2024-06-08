@@ -7,8 +7,8 @@ import { Button } from '@/components/elements';
 import { useRouter } from 'next/router';
 import { BiCaretDown } from 'react-icons/bi';
 import DropDownComponent from './DropDownComponent';
-import { AkilaahLogo } from '../../../public/assets/images';
 import { externalRoutes, internalRoutes, navRoutes } from '@/utils/appRoutes';
+import { LogoWhite } from '../../../public/assets/icons';
 
 const documentationLinks = [
   { label: 'Membership', link: '/documentation/membership' },
@@ -59,18 +59,13 @@ const MobileNav = () => {
   return (
     <nav className="block xl:hidden">
       <div
-        className={`fixed z-[500] top-0 left-0 right-0 w-full flex justify-between items-center px-4 py-3 all__trans ${
-          navbar ? 'bg-white shadow-lg' : ''
+        className={`fixed z-[500] top-0 left-0 right-0 w-full bg-white flex justify-between items-center px-4 py-3 all__trans ${
+          navbar ? ' shadow-lg' : ''
         }`}
       >
         <div className="flex-1">
           <Link href={internalRoutes.HOME}>
-            <Image
-              src={AkilaahLogo}
-              alt="akilaah logo"
-              width="80"
-              height="80"
-            />
+            <Image src={LogoWhite} alt="ace logo" width={48} height={48} />
           </Link>
         </div>
 
@@ -92,12 +87,7 @@ const MobileNav = () => {
       >
         <div className="flex justify-between items-center md:hidden">
           <Link href={internalRoutes.HOME}>
-            <Image
-              src={AkilaahLogo}
-              alt="akilaah logo"
-              width="90"
-              height="90"
-            />
+            <Image src={LogoWhite} alt="ace logo" width={48} height={48} />
           </Link>
           <button
             onClick={handleMenu}
